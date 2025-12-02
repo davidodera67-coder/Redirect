@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; URL='http://www.bidwoodsuites.com/'" />
-  </head>
-  <body></body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+
+<!-- Redirect after 1.5 seconds -->
+<script>
+    setTimeout(function() {
+        window.location.href = "https://www.bidwoodsuites.com/";
+    }, 1500);
+</script>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        color: white;
+        font-family: Arial, sans-serif;
+        flex-direction: column;
+    }
+
+    .loader {
+        border: 6px solid #333;
+        border-top: 6px solid white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin-bottom: 15px;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .text {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="text">Loading…</div>
+</body>
 </html>
+
